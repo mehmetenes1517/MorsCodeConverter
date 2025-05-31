@@ -1,5 +1,5 @@
 ------------------------------------
 Building Project
-  make build
+      make build
 Running project
-  make run
+      make run
