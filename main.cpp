@@ -1,17 +1,19 @@
 #include<iostream>
-#include"ADT/Mors.hpp"
 #include"ADT/Message.hpp"
 
 
 int main(){
 
-    Message message;
-    
-    std::string mors=message.convert2mors("Hello World");
-    std::string text=message.convert2text(mors);
+    Message message_converter;
 
-    std::cout<<"\n"<<mors;
-    std::cout<<"\n"<<text;
+    std::string input;
+    while(input!=std::string("---")){
+        std::cout<<"\nMessage : ";
+        std::cin>>input;
+
+        std::cout<<"\nMors Message : "<<message_converter.convert2mors(input);
+    }
+    
 
     return 0;
 }
